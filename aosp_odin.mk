@@ -2,8 +2,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Aosp stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -14,7 +14,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := odin
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_odin
+PRODUCT_NAME := aosp_odin
 PRODUCT_MODEL := MIX 4
 PRODUCT_SHIPPING_API_LEVEL := 30
 
